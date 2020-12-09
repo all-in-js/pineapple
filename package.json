@@ -1,0 +1,28 @@
+{
+  "name": "pineapple",
+  "version": "1.0.0",
+  "main": "dist/svg-icon.common.js",
+  "license": "MIT",
+  "bin": {
+    "bolo": "bin/pineapple-cli.js",
+    "pineapple": "bin/pineapple-cli.js"
+  },
+  "scripts": {
+    "build": "rollup --config ./build/svg-icon.rollup.js"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "rollup": "^2.34.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-vue": "^5.1.9",
+    "vue": "2.5.17",
+    "vue-template-compiler": "2.5.17"
+  }
+}
