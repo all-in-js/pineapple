@@ -24,5 +24,8 @@
     "rollup-plugin-vue": "^5.1.9",
     "vue": "2.5.17",
     "vue-template-compiler": "2.5.17"
+  },
+  "dependencies": {
+    "svgo": "^1.3.2"
   }
 }

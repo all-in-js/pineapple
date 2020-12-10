@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const url = require('url');
 const { fse, resolve, fetch, chalk, log, spinner } = require('@iuv-tools/utils');
 
