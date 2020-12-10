@@ -4,7 +4,7 @@
 
 <p align="left>
 
-![](flow-chart.jpg)
+![](https://github.com/famanoder/pineapple/blob/dev/flow-chart.jpg?raw=true)
 </p>
 
 该项目是一个整合了 svg 图标使用和管理的全流程解决方案，除了一般意义的组件外，还包括图标的管理平台、自动同步机制、按需引用机制、基于管理平台的图标数据的集成机制等；
