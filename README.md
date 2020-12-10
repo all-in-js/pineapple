@@ -2,10 +2,7 @@
 
 > 一个基于 svg 的图标管理和组件化方案
 
-<p align="left>
-
 ![](https://raw.githubusercontent.com/famanoder/pineapple/dev/flow-chart.jpg)
-</p>
 
 该项目是一个整合了 svg 图标使用和管理的全流程解决方案，除了一般意义的组件外，还包括图标的管理平台、自动同步机制、按需引用机制、基于管理平台的图标数据的集成机制等；
 
