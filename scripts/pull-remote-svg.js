@@ -1,7 +1,7 @@
 const url = require('url');
 const { fse, resolve, fetch, chalk, log, spinner } = require('@iuv-tools/utils');
 
-const requestUri = 'https://fe-cms.mcd.megvii-inc.com/v1/feicons/svg/pullSvgIcons';
+const requestUri = 'https://locale.server';
 const fileTemp = data => `// created by <pineapple> CLI，${new Date().toLocaleString()}
 export default ${JSON.stringify(data)}
 `;
