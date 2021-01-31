@@ -1,12 +1,11 @@
-const chalk = require('chalk');
 const path = require('path');
 const url = require('url');
-const fetch = require('node-fetch');
 const t = require('@babel/types');
 const loaderUtils = require('loader-utils');
 const traverse = require('@babel/traverse').default;
 const generate = require('@babel/generator').default;
 const { parse } = require('@babel/parser');
+const { chalk, fetch } = require('@iuv-tools/utils');
 const pkg = require('../package.json');
 
 const prefix = chalk.gray(`[${pkg.name}]: `);
