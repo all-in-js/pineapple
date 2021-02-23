@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const url = require('url');
 const { fse, fetch, log, spinner, resolve } = require('@iuv-tools/utils');
 const { parse } = require('@babel/parser');
@@ -7,7 +5,7 @@ const t = require('@babel/types');
 const generate = require('@babel/generator').default;
 const traverse = require('@babel/traverse').default;
 
-const requestUri = 'https://fe-cms.mcd.megvii-inc.com/v1/feicons/svg/pullSvgIcons';
+const requestUri = 'https://locale.server';
 const sourceFile = resolve(__dirname, '../dist/svg-icon.common.js');
 
 module.exports = async function updateIcon(projects) {

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const path = require('path');
 const fs = require('fs');
 const SvgOptimize = require('./svgo');
@@ -14,21 +12,22 @@ const SvgOptimize = require('./svgo');
  */
 const cwd = process.cwd();
 const svgo = new SvgOptimize();
-const sourceDir = path.resolve(cwd, source[0]);
-const outputFilePath = path.resolve(cwd, agrs.outFile);
-
-if (!fs.existsSync(sourceDir)) {
-  throw new Error(`no file or directory: '${sourceDir}'`);
-}
-
-const prefix = sourceDir.replace(/[\\\/]+$/, '').split(/[\\\/]/).slice(-1)[0] || 'svgs';
 
 /**
  * 第一期支持一级目录
  */
-module.exports = async function svg2js() {
+module.exports = async function svg2js(source, outFile) {
+  const sourceDir = path.resolve(cwd, source);
+
+  if (!fs.existsSync(sourceDir)) {
+    throw new Error(`no file or directory: '${sourceDir}'`);
+  }
+
   let result = {};
+  const outputFilePath = path.resolve(cwd, outFile);
+  const prefix = sourceDir.replace(/[\\\/]+$/, '').split(/[\\\/]/).slice(-1)[0] || 'svgs';
   const sourceFiles = fs.readdirSync(sourceDir);
+
   if (sourceFiles && sourceFiles.length) {
     for (const item of sourceFiles) {
       const filePath = path.join(sourceDir, item);

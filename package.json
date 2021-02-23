@@ -1,5 +1,5 @@
 {
-  "name": "pineapple",
+  "name": "@open-fe/svg-icons",
   "version": "1.0.0",
   "main": "dist/svg-icon.common.js",
   "license": "MIT",
@@ -24,5 +24,15 @@
     "rollup-plugin-vue": "^5.1.9",
     "vue": "2.5.17",
     "vue-template-compiler": "2.5.17"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.12.11",
+    "@babel/parser": "^7.12.11",
+    "@babel/traverse": "^7.12.12",
+    "@babel/types": "^7.12.12",
+    "@iuv-tools/utils": "^1.0.0-beta.2",
+    "loader-utils": "^2.0.0",
+    "svgo": "^1.3.2",
+    "yargs-parser": "^20.2.4"
   }
 }
