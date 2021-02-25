@@ -1,6 +1,6 @@
 {
-  "name": "pineapple",
-  "version": "1.0.0",
+  "name": "@all-in-js/svg-icons",
+  "version": "1.0.1",
   "main": "dist/svg-icon.common.js",
   "license": "MIT",
   "bin": {
@@ -13,6 +13,14 @@
   "peerDependencies": {
     "vue": "^2.5.17"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/all-in-js/pineapple"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
@@ -24,5 +32,9 @@
     "rollup-plugin-vue": "^5.1.9",
     "vue": "2.5.17",
     "vue-template-compiler": "2.5.17"
+  },
+  "dependencies": {
+    "@all-in-js/utils": "^1.0.0",
+    "svgo": "^1.0.5"
   }
 }

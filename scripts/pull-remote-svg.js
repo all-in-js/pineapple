@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 const url = require('url');
-const { fse, resolve, fetch, chalk, log, spinner } = require('@iuv-tools/utils');
+const { fse, resolve, fetch, chalk, log, spinner } = require('@all-in-js/utils');
 
-const requestUri = 'https://fe-cms.mcd.megvii-inc.com/v1/feicons/svg/pullSvgIcons';
+const requestUri = 'http://localhost:3100/svg/pullSvgIcons';
 const fileTemp = data => `// created by <pineapple> CLI，${new Date().toLocaleString()}
 export default ${JSON.stringify(data)}
 `;
